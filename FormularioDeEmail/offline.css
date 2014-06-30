@@ -1,0 +1,42 @@
+body{  
+}
+
+#wrap{      
+  height: 0px;
+}
+
+.container{    
+  padding-top: 0px;
+  
+}
+
+.outline{
+    width: 350px;
+    margin: 0 auto;
+  }
+
+label[for="remember"]{
+  float: left;
+  margin: 0 5px;
+}
+
+#remember {
+  float: left;
+}
+
+#form-login-remember:after, .container:after{
+
+  content:".";
+  display:block;
+  clear:both;
+  visibility:hidden;
+  height:0;
+  overflow:hidden;
+}
+
+.button{  
+}
+
+.row{
+  text-align: center;
+}
