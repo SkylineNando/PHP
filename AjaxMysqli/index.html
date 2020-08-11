@@ -9,14 +9,10 @@ $(document).ready( function(){ //Quando documento estiver pronto
         var nameCost   = $('#nameCost').val(); 
         var dCost   = $('#dCost').val();
         var vCost  = $('#vCost').val(); 
-        var typeCost   = $('#typeCost').val();                                            
- 
-		
+        var typeCost   = $('#typeCost').val();     
+	    
         /* construindo url */
-        var urlData = "&nameCost=" + nameCost + 
-		              "&dCost=" + dCost + 
-					  "&vCost=" + vCost + 
-					  "&typeCost=" + typeCost ;
+        var urlData = "&nameCost=" + nameCost + "&dCost=" + dCost + "&vCost=" + vCost + "&typeCost=" + typeCost ;
 
         /* Ajax */
         $.ajax({
@@ -40,16 +36,17 @@ $(document).ready( function(){ //Quando documento estiver pronto
         </script>	
   </head>
   <body>
-  <form method='POST' >
-	<input type="text" name="nameCost" id="nameCost" ><br>
-	<select name="typeCost"  id="typeCost"  >
-					<option value="fixo" >Fixo</option>
-					<option value="variavel" >Variável</option>
-	 </select>
-	<input type="date" name="dateCost" id="dCost" ><br>
-	<input type="text" name="valueCost" id="vCost"><br>
-	<input type="button" id="fromCost" value="SALVAR">
-	</form>
-  
+	<div id="returnCost">
+		<form method='POST' >
+			<input type="text" name="nameCost" id="nameCost" ><br>
+			<select name="typeCost"  id="typeCost"  >
+				<option value="fixo" >Fixo</option>
+				<option value="variavel" >Variável</option>
+			</select>
+			<input type="date" name="dateCost" id="dCost" ><br>
+			<input type="text" name="valueCost" id="vCost"><br>
+			<input type="button" id="fromCost" value="SALVAR">
+		</form>
+ 	 </div>
   </body>
 </html>
