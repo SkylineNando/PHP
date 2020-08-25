@@ -15,3 +15,12 @@ Documentação Oficial:
 * Verificando se o usuário está logado
 * Código de Logout
 
+### CRYPTOGRAPHY
+
+* BASE64 DECODE
+* BASE64 ENCODE
+* MD5
+* SHA
+* HASH
+* PASSWORD HASH - PASSWORD_DEFAULT
+* PASSWORD HASH - PASSWORD_DEFAULT
