@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: http://localhost/travel/login.php");
+    header("Location: login.php");
     exit;
 }
 
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "UPDATE usuarios SET nome='$nome', sobrenome='$sobrenome', aniversario='$aniversario', telefone='$telefone', idfoto='$novoNomeImagem' WHERE IDTraveler=$id";
 
         if ($conn->query($sql) === TRUE) {
-            header("Location: http://localhost/travel/dashboard/");
+            header("Location: dashboard/");
         } else {
             echo "Erro ao salvar as alterações: " . $conn->error;
         }
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "UPDATE usuarios SET nome='$nome', sobrenome='$sobrenome', aniversario='$aniversario', telefone='$telefone' WHERE IDTraveler=$id";
 
         if ($conn->query($sql) === TRUE) {
-            header("Location: http://localhost/travel/dashboard/");
+            header("Location: dashboard/");
         } else {
             echo "Erro ao salvar as alterações: " . $conn->error;
         }
